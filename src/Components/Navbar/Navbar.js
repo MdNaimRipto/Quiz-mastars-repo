@@ -28,11 +28,11 @@ const Navbar = () => {
             </div>
             <div className=' flex justify-between items-center container mx-auto py-6 border-b-0 md:border-b-2'>
                 <div className='hidden md:block'>
-                    <h2 className=' text-2xl font-semibold cursor-pointer'>Quiz
+                    <h2 className=' text-4xl font-semibold cursor-pointer'>Quiz
                         <span className=' text-sky-600 ml-2'>Masters</span>
                     </h2>
                 </div>
-                <nav className={` duration-200 ${open ? "h-48 p-4 bg-sky-300 w-full" : "h-0"}`}>
+                <nav className={` duration-200 md:h-6 ${open ? "h-48 pt-4 bg-sky-200 w-full" : " h-0 pt-0"}`}>
                     <div className={`absolute md:static duration-150 
                                         ${open ? "left-[12%]" : "left-[-30%]"}`}>
                         <u className='flex flex-col md:flex-row justify-between items-baseline md:items-center gap-5 md:gap-9 no-underline'>
