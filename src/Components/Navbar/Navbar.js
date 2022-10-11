@@ -32,7 +32,7 @@ const Navbar = () => {
                         <span className=' text-sky-600 ml-2'>Masters</span>
                     </h2>
                 </div>
-                <nav>
+                <nav className={` duration-200 ${open ? "h-48 p-4 bg-sky-300 w-full" : "h-0"}`}>
                     <div className={`absolute md:static duration-150 
                                         ${open ? "left-[12%]" : "left-[-30%]"}`}>
                         <u className='flex flex-col md:flex-row justify-between items-baseline md:items-center gap-5 md:gap-9 no-underline'>
