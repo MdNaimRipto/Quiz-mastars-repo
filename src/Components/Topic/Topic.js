@@ -8,12 +8,12 @@ const Quiz = (props) => {
     return (
         <div className=' border-2 rounded'>
             <img className=' bg-yellow-200' src={logo} alt="" />
-            <div>
-                <h4>{name}</h4>
+            <div className='flex items-center justify-between my-5 mx-3'>
+                <h4 className='text-xl'>{name}</h4>
                 <Link to={`/quiz/${id}`}>
-                    <button>
+                    <button className=' py-2 md:py-3 px-5 md:px-6 bg-yellow-200 rounded text-sm md:text-base text-dark font-semibold'>
                         Start Practice
-                        <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
+                        <FontAwesomeIcon className='ml-2' icon={faArrowRight}></FontAwesomeIcon>
                     </button>
                 </Link>
             </div>
