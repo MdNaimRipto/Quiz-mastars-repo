@@ -15,7 +15,9 @@ const Navbar = () => {
         <>
             <div className=' flex md:hidden justify-between items-center container mx-auto pt-6 px-9'>
                 <div className='block md:hidden'>
-                    <h2 className='text-3xl font-semibold cursor-pointer'>Quiz Masters</h2>
+                    <h2 className='text-3xl font-semibold cursor-pointer'>Quiz
+                        <span className=' text-sky-600 ml-2'>Masters</span>
+                    </h2>
                 </div>
                 <div onClick={() => { setOpen(!open) }} className="block md:hidden text-xl">
                     {
@@ -24,9 +26,11 @@ const Navbar = () => {
                     }
                 </div>
             </div>
-            <div className=' flex justify-between items-center container mx-auto py-6'>
+            <div className=' flex justify-between items-center container mx-auto py-6 border-b-0 md:border-b-2'>
                 <div className='hidden md:block'>
-                    <h2 className=' text-2xl font-semibold cursor-pointer'>Quiz Masters</h2>
+                    <h2 className=' text-2xl font-semibold cursor-pointer'>Quiz
+                        <span className=' text-sky-600 ml-2'>Masters</span>
+                    </h2>
                 </div>
                 <nav>
                     <div className={`absolute md:static duration-150 
