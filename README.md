@@ -1,7 +1,7 @@
 #The Features and Details of My Website.
 
 1. Website Name: Quiz Masters.
-2. Live site Link: 
+2. Live site Link: https://quiz-masters-co.netlify.app/
 3. Description: Quiz Masters is a website created with react js. It is a functional website. The site is created using React Router means it is a single page application. The website is responsive for both mobile and desktop device.
  There are total for routes in the Navbar. Home, Topics, Statistics and Blog.
   In Topics there  are four different types of quiz section. Each of them contains different type of quiz.
