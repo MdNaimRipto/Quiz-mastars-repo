@@ -5,7 +5,7 @@ import Topic from "../Topic/Topic"
 const Topics = () => {
     const topics = useLoaderData();
     return (
-        <div className='flex flex-col md:flex-row mx-5 gap-5 mt-10'>
+        <div className='flex flex-col md:flex-row mx-auto w-11/12 container gap-5 mt-10'>
             {
                 topics.data.map(topic => <Topic key={topic.id} topic={topic}></Topic>)
             }

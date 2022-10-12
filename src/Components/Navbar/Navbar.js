@@ -28,7 +28,8 @@ const Navbar = () => {
             </div>
             <div className=' flex justify-between items-center container mx-auto py-6 border-b-0 md:border-b-2'>
                 <div className='hidden md:block'>
-                    <h2 className=' text-4xl font-semibold cursor-pointer'>Quiz
+                    <h2 className=' text-4xl font-semibold cursor-pointer'>
+                        Quiz
                         <span className=' text-sky-600 ml-2'>Masters</span>
                     </h2>
                 </div>

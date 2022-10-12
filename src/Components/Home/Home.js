@@ -25,7 +25,7 @@ const Home = () => {
                     </button>
                 </Link>
             </div>
-            <div className='flex flex-col md:flex-row mx-5 gap-5 my-20'>
+            <div className='flex flex-col md:flex-row w-11/12 gap-5 my-20 container mx-auto'>
                 {
                     topics.data.map(topic => <Topic key={topic.id} topic={topic}></Topic>)
                 }

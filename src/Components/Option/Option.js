@@ -1,16 +1,12 @@
 import React from 'react';
 
 
-const Option = ({ option, handleAnswer, handleClick }) => {
+const Option = ({ option, handleAnswer }) => {
 
     return (
-        <div className='border-2 shadow shadow-black rounded p-5'>
-            <div>
-                <button>
-                    <p onClick={(e) => { handleAnswer(e) }}>{option}</p>
-                </button>
-            </div>
-        </div >
+        <button onClick={(e) => { handleAnswer(e) }} className="p-5 w-full shadow shadow-black rounded">
+            {option}
+        </button>
     );
 };
 
