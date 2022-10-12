@@ -3,7 +3,6 @@ import Quiz from '../Quiz/Quiz';
 
 const AllQuiz = () => {
     const quizzes = useLoaderData();
-    console.log(quizzes)
 
     return (
         (<div>
