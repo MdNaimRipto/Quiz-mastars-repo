@@ -41,7 +41,10 @@ function App() {
         },
         {
           path: "/statistics",
-          element: <Statistics></Statistics>
+          element: <Statistics></Statistics>,
+          loader: async () => {
+            return fetch("https://openapi.programming-hero.com/api/quiz")
+          }
         },
         {
           path: "/blog",

@@ -1,15 +1,15 @@
-import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Quiz from '../Quiz/Quiz';
 
 const AllQuiz = () => {
     const quizzes = useLoaderData();
+
     return (
-        <div>
+        (<div>
             {
                 quizzes.data.questions.map(quiz => <Quiz key={quiz.id} quiz={quiz}></Quiz>)
             }
-        </div>
+        </div>)
     );
 };
 

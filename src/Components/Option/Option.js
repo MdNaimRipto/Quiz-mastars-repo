@@ -1,10 +1,14 @@
 import React from 'react';
 
 
-const Option = ({ option, handleAnswer }) => {
+const Option = ({ option, handleAnswer, cardsDisabled }) => {
 
     return (
-        <button onClick={(e) => { handleAnswer(e) }} className="p-5 w-full shadow shadow-black rounded">
+        <button
+            type='button'
+            disabled={cardsDisabled}
+            onClick={(e) => { handleAnswer(e) }}
+            className="p-5 w-full shadow shadow-black rounded">
             {option}
         </button>
     );
