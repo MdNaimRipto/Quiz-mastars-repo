@@ -6,11 +6,15 @@ import Topics from './Components/Topics/Topics';
 import Statistics from './Components/Statistics/Statistics';
 import Blog from './Components/Blog/Blog';
 import AllQuiz from './Components/AllQuiz/AllQuiz';
+import NotFound from './Components/NotFound/NotFound';
 
 function App() {
   const router = createBrowserRouter([
     {
-      path: "/", element: <Main></Main>, children: [
+      path: "/",
+      element: <Main></Main>,
+      errorElement: <NotFound></NotFound>,
+      children: [
         {
           path: "/",
           element: <Home></Home>,

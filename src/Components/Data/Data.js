@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-    XAxis, YAxis, Tooltip, ResponsiveContainer, LineChart, Line
+    XAxis, YAxis, Tooltip, ResponsiveContainer, LineChart, Line, CartesianGrid
 } from "recharts";
 const Data = (props) => {
     const { data } = props.allData;
@@ -22,7 +22,7 @@ const Data = (props) => {
                     <Line dataKey="total" fill="#8884d8" background={{ fill: "#eee" }} />
                     <YAxis />
                     <Tooltip />
-                    {/* <Legend /> */}
+                    <CartesianGrid strokeDasharray="3 3" />
                 </LineChart>
             </ResponsiveContainer>
         </div>
