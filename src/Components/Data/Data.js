@@ -6,7 +6,7 @@ const Data = (props) => {
     const { data } = props.allData;
     return (
         <div className='container mt-12'>
-            <ResponsiveContainer width="70%" height={300} className="md:mx-auto mx-0">
+            <ResponsiveContainer width="95%" height={300} className="md:mx-auto mx-0">
                 <LineChart
 
                     data={data}
