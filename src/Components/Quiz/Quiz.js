@@ -6,7 +6,7 @@ import { faEye } from '@fortawesome/free-solid-svg-icons';
 
 const Quiz = (props) => {
 
-    const { correctAnswer, question, options } = props.quiz
+    const { correctAnswer, question, options, } = props.quiz
     const answer = correctAnswer.replace(/\s+/g, ' ').trim()
 
     const [cardsDisabled, setCardsDisabled] = useState(false);
@@ -61,8 +61,10 @@ const Quiz = (props) => {
             />
 
             <div>
-                <div className='flex justify-between items-center w-11/12 mx-auto'>
-                    <h2 className='text-1xl md:text-2xl mb-5 text-justify'>{question}</h2>
+                <div className='flex justify-between items-center container mx-auto w-[96%]'>
+                    <h2
+                        className='text-1xl md:text-2xl mb-5 text-justify font-semibold'>{question}
+                    </h2>
                     <FontAwesomeIcon
                         onClick={handleShowAnswer}
                         disabled={cardsDisabled}

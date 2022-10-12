@@ -8,7 +8,7 @@ const Option = ({ option, handleAnswer, cardsDisabled }) => {
             type='button'
             disabled={cardsDisabled}
             onClick={(e) => { handleAnswer(e) }}
-            className="p-5 w-full shadow shadow-black rounded">
+            className="p-5 w-full rounded box-shadow mt-4">
             {option}
         </button>
     );
