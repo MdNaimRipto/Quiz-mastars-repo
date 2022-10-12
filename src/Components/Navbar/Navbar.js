@@ -36,7 +36,7 @@ const Navbar = () => {
                 <nav className={` duration-200 md:h-6 ${open ? "h-48 pt-4 bg-sky-200 w-full" : " h-0 pt-0"}`}>
                     <div className={`absolute md:static duration-150 
                                         ${open ? "left-[12%]" : "left-[-30%]"}`}>
-                        <u className='flex flex-col md:flex-row justify-between items-baseline md:items-center gap-5 md:gap-9 no-underline'>
+                        <u className='flex flex-col md:flex-row justify-between items-baseline md:items-center gap-5 md:gap-9 mb-5 md:mb-0 no-underline'>
                             {
                                 routes.map(route => <Links key={route.id} route={route}></Links>)
                             }
